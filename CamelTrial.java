@@ -1,5 +1,6 @@
 import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultCamelContext;
+import BasicRoutes.MyCamelRoute;
 
 public class CamelTrial {
     public static void main(String[] args) throws Exception
