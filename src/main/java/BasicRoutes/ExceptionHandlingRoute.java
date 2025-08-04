@@ -1,4 +1,7 @@
+package BasicRoutes;
+
 import org.apache.camel.builder.RouteBuilder;
+
 public class ExceptionHandlingRoute extends RouteBuilder {
 
   //change according to local settings
