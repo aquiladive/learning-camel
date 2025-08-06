@@ -23,6 +23,6 @@ public class MulticastRoute extends RouteBuilder {
     //to prevent that
     from("file:"+desktopPath+"London/WarCouncil")
       .multicast().stopOnException()
-      .to("file:"+desktopPath+"London/Council1", "file:"+desktopPath+"London/Council2")
+      .to("file:"+desktopPath+"London/Council1", "file:"+desktopPath+"London/Council2");
   }
 }
