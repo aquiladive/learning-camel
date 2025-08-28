@@ -1,5 +1,7 @@
 package BasicRoutes;
 
+//the Camel doc for SFTP component leaves out that filterFile won't work without encoding the Simple expression. Using the Simple expression as is, I've gotten the error that "<" can't be parsed.
+
 import org.apache.camel.builder.RouteBuilder;
 
 public class CamelMailRoute extends RouteBuilder {
