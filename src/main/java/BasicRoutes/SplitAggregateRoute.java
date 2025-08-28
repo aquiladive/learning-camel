@@ -8,8 +8,8 @@ public class SplitAggregateRoute extends RouteBuilder {
   //change according to local settings
   private String desktopPath = "/Users/username/Desktop/";
 
-    @Override public void configure() throws Exception
-    {
+    @Override
+  public void configure() throws Exception {
         from("file:"+desktopPath+"Start?noop=true")
                 .split().tokenize("\n") //splitting by newline
                 .aggregate(simple("${body} contains 'London'"), new StringAggregationStrategy())
