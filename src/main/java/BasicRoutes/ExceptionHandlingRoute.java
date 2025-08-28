@@ -7,8 +7,8 @@ public class ExceptionHandlingRoute extends RouteBuilder {
   //change according to local settings
   private String desktopPath = "/Users/username/Desktop/";
 
-    @Override public void configure() throws Exception
-    {
+  @Override
+  public void configure() throws Exception {
         onException(Exception.class)
                 .log("Exception has occurred.")
                 .to("file:"+desktopPath+"Error");
