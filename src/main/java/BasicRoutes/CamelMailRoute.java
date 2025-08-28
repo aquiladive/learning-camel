@@ -7,7 +7,8 @@ public class CamelMailRoute extends RouteBuilder {
   String smtpPath = "smtp://localhost:3025";
   String smtpParams = "username=test@localhost&password=password";
   
-  @Override public void configure() throws Exception {
+  @Override
+  public void configure() throws Exception {
     onException(Exception.class)
       .wiretap(smtpPath+"?"+smtpParams)
       .to("file:"+desktopPath+"Error");
